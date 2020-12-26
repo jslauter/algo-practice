@@ -5,9 +5,12 @@ e.g palindromeChecker('racecar') // will return true
 
 
 
-
 function palindromeChecker(text) {
-    v// Code goes here
+
+    var reversedText = text.toLowerCase()
+        .split('').reverse().join('')
+
+    return text === reversedText
 }
 
 
